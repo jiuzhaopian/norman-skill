@@ -1,5 +1,21 @@
-
 # Norman-Skill
+
+## 本 Fork 的改进 / Fork improvements
+
+本仓库由 jiuzhaopian 基于 [N-tongxue/norman-skill](https://github.com/N-tongxue/norman-skill) 创建，原作者为 N同学。本 Fork 主要增强 [norman-paper-reading](norman-paper-reading/README.md) 的研究脉络、相关工作与研究局限解读。
+
+This fork by jiuzhaopian builds on Norman-Skill by N同学 and improves the research storyline, related-work analysis and limitations discussion in norman-paper-reading.
+
+- 方法之前说明前人路线、代表工作、已有进展和具体缺口，再解释本文为何选择相应思路。
+- 结果之后单列作者承认的局限、阅读者的证据判断与适用范围；阅读和复现缺口另行记录。
+- 先解释机制，再引入术语和公式，并说明主要实验分别回答什么问题。
+- 报告默认不附加技能作者推广水印；保留原作者和科学引用，仅在明确请求时增加输出署名。
+
+更新规则以仓库内可读文本为准。原版执行程序与其他技能保持上游版本。详见 [修改说明](norman-paper-reading/FORK-NOTES.md)。
+
+Updated readable instructions override the older embedded workflow. See [fork notes](norman-paper-reading/FORK-NOTES.md). This fork grants no new rights over upstream or third-party material.
+
+---
 
 你好，我是 **N同学(Norman)**，一名清华大学在读博士生。  
 Hi, I'm **Norman (N同学)**, a PhD student at Tsinghua University.

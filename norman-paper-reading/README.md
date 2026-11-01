@@ -1,5 +1,19 @@
 # Norman Paper Reading 使用说明 / User Guide
 
+## 本 Fork 的增强 / Improvements in this fork
+
+基于 [N同学的原仓库](https://github.com/N-tongxue/norman-skill)，由 jiuzhaopian 定制。完整精读现在按“前人路线—已有进展—具体缺口—本文思路—方法与实验—局限与适用范围”组织。
+
+Whole-paper reading now traces prior approaches, established progress, the specific gap, the proposed idea, its methods and experiments, and the supported scope.
+
+- **研究背景、相关工作与研究动机**：解释代表方法如何工作，本文继承或修改了什么，并区分当前论文的介绍与实际读过的被引原文。
+- **研究局限与适用范围**：区分作者承认的限制、阅读者判断以及阅读/复现缺口，说明重要限制影响哪项结论。
+- **可读性与范围**：先讲机制再展开公式，按科学问题串起实验；quick/focused 保持原请求范围，未来规划保持适度。
+
+Read the updated [SKILL.md](SKILL.md), [workflow](references/reading-workflow.md), [research-story and limitations guide](references/research-story-and-limitations.md), and [report template](assets/reading-note-template.md) directly. These local files override the older embedded `guide`/`read` resources; executables are unchanged. Output attribution is opt-in, while original authors and scientific citations remain credited.
+
+报告默认不附加技能作者推广署名，明确要求时才添加。原论文作者与科学引用正常保留。更多说明见 [FORK-NOTES.md](FORK-NOTES.md)。
+
 ## 技能用途 / Purpose
 
 Norman Paper Reading 用于阅读指定科研论文，梳理研究问题、设计、证据、图表、公式和后续研究方向。
@@ -19,7 +33,7 @@ For example, ask “Use `$norman-paper-reading` for a close reading of this pape
 | 阅读方式 / Mode | 适用请求 / When to use | 主要内容 / Main content |
 | --- | --- | --- |
 | 快速总结 / Quick | 想抓住研究问题、方法、主要结果和阅读价值。 / You want the question, method, main results, and reading value. | 核心设计、关键结果和阅读重点。 / Core design, key results, and reading priorities. |
-| 完整精读 / Deep | 想理解论文全貌及关键实验、方法或理论。 / You want the full paper and its key experiments, methods, or theory. | 研究故事、图表、公式和证据边界。 / Research storyline, figures, equations, and evidence boundaries. |
+| 完整精读 / Deep | 想理解论文全貌及关键实验、方法或理论。 / You want the full paper and its key experiments, methods, or theory. | 研究背景、相关工作、方法证据、研究局限与适用范围。 / Research background, related work, methods, evidence, limitations, and applicability. |
 | 延伸分析 / Extend | 想把论文用于自己的课题。 / You want to apply the paper to your project. | 迁移条件、复现清单和研究计划。 / Transfer conditions, reproduction checklist, and research plan. |
 | 局部解释 / Focused | 只关心一张图、一条公式或一段文字。 / You need one figure, equation, or passage explained. | 指定内容、必要背景和解释。 / Requested item, essential context, and explanation. |
 
@@ -36,13 +50,13 @@ If you want saved files, specify a Markdown report and image folder; explicitly 
 
 ## 本地命令 / Local commands
 
-复制完整技能文件夹后，先运行对应系统的程序并读取内置指南。
-After copying the complete skill folder, run the executable for your system and read its bundled guide first.
+复制完整技能文件夹后，先直接读取本目录的 SKILL.md 和其中链接的可读规范；PDF 工具使用对应系统的原版程序。
+After copying the complete skill folder, read the local SKILL.md and linked readable instructions first; use the matching upstream executable for PDF operations.
 
 ```powershell
-& "<skill-root>/norman-paper-reading.exe" guide
-& "<skill-root>/norman-paper-reading.exe" list
-& "<skill-root>/norman-paper-reading.exe" read references/reading-workflow.md
+& "<skill-root>/norman-paper-reading.exe" extract "<paper.pdf>" --out "<output>/source"
+& "<skill-root>/norman-paper-reading.exe" render "<paper.pdf>" --pages 1,3-5 --out "<output>/assets/pages"
+& "<skill-root>/norman-paper-reading.exe" validate "<output>/reading-note.md" --mode deep --evidence "<output>/evidence.json" --source-map "<output>/source/source_map.json"
 ```
 
 | 命令 / Command | 中文用途 | English use |
