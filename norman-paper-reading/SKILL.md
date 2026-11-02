@@ -4,6 +4,7 @@ description: "Summarize or closely read specified scientific papers, reconstruct
 metadata:
   version: "1.4.0"
   author: "N同学"
+  user_revision: "2026-11-03-figure-reading"
 ---
 
 # norman-paper-reading
@@ -53,7 +54,7 @@ Quick text-only summaries need only this entry point. Do not pre-load every refe
 
 - [reading-workflow.md](references/reading-workflow.md): deep/extend workflow and input fallbacks.
 - [research-story-and-limitations.md](references/research-story-and-limitations.md): required for whole-paper deep/extend; reconstruct related-work lineage, explain the origin of the idea, and distinguish scientific limitations from reading gaps.
-- [figure-and-equation-reading.md](references/figure-and-equation-reading.md): explaining original visuals or equations.
+- [figure-and-equation-reading.md](references/figure-and-equation-reading.md): explaining original visuals or equations; concrete reading examples, comparison design, and semantic completion checks.
 - [evidence-and-research-cards.md](references/evidence-and-research-cards.md): saved evidence JSON or research actions.
 - [future-research-planning.md](references/future-research-planning.md): default future insights and plans for deep analysis; detailed roadmaps for extend. Quick uses the compact guidance below without loading this reference.
 - [paper-types.md](references/paper-types.md): specialized study-type checks.
@@ -100,9 +101,11 @@ For quick, give a concise source-grounded insight and the first useful check. Fo
 
 Every individually explained figure/table gets its **original image directly below its heading**, before analysis, plus source locator and panel coverage. Inspect a full page before cropping. Preserve panels, axes/units, legends, scale bars, annotations, captions, table headers/footnotes, and multipage parts. Recreated charts are not originals. If an image cannot be obtained or viewed, disclose that locally; rendering alone is not verification.
 
-For figures: why → method → reading cues → observations → support/boundary → next question. Cover relevant panels and explain omissions; group repetitive panels with explicit coverage. Use compact explanations for simple items and detail for decisive ones.
+For figures: question and role → necessary concepts → experimental setup → read a concrete element → compare conditions → supported conclusion and place in the argument. For a decisive or unfamiliar visual, explain what one cell, point, bar, image region, or diagram connection represents and walk through a representative reading. Explain the meaning and use of a salient diagonal, baseline, threshold, or other reference, including features created by construction or selection. Naming axes and describing a trend alone is incomplete. Cover relevant panels and explain omissions; group repetitive panels with explicit coverage. Simple items can combine these functions in a short paragraph.
 
-For necessary equations: purpose, symbols/units, operations, intuition, assumptions, method role, limits. Separate original transcription, rearrangement, and added derivation. Preserve unclear formulas as source crops instead of guessing. Numerical checks are not general proofs.
+For result tables, trace the relevant data/model or study flow into one reported cell, then show a meaningful comparison with the shared conditions and changed factors. Define metric direction, units, aggregation, and the score being evaluated. Distinguish joint changes from isolated component evidence; if a protocol or score-combination rule is unspecified, keep that link unresolved. Follow the detailed reading guide rather than imposing machine-learning terminology on other paper types.
+
+For necessary equations, explain the concrete operation before a full symbol inventory: what enters, what is computed, what changes, and why it helps. For an unfamiliar objective or estimator, work through a small clearly labeled example when useful, then define indices, sums, symbols/units, assumptions, method role, and limits. Distinguish model parameters, hyperparameters, training losses, probabilities, and evaluation metrics. Separate original transcription, rearrangement, and added derivation. Preserve unclear formulas as source crops instead of guessing. Numerical checks are not general proofs.
 
 ## Deliver and verify
 
@@ -113,6 +116,8 @@ For saved deep/extend, adapt [reading-note-template.md](assets/reading-note-temp
 Check key numbers, formulas, statistical units, image completeness, and inference boundaries while reading/writing. At completion, reconcile scope and unresolved/high-risk claims. Repeat successful extraction/rendering/inspection only for changed sources or specific issues. Run the bundled `validate` command once after saved content/assets are ready, repairing and rerunning affected checks as necessary. Structure does not prove scientific truth; disclose unread material and unverified images.
 
 For whole-paper deep/extend, also apply the semantic completion check in [research-story-and-limitations.md](references/research-story-and-limitations.md): the reader must be able to trace prior approaches to the gap, the proposed idea, its tests, and its supported scope. A structural validator passing does not establish this coverage.
+
+For explained figures/tables/equations, apply the reader-transfer check in [figure-and-equation-reading.md](references/figure-and-equation-reading.md): the explanation must let the reader decode a representative element, repeat the intended comparison, and state why it supports the stated claim. Repair missing steps before delivery. A plotted association or auxiliary behavioral observation must retain its actual role; do not invent a causal bridge to the next method.
 
 Package provenance: **Norman Paper Reading / norman-paper-reading**; creator **N同学**, also known as **耐心的N同学**. Keep this provenance in the skill documentation. Preserve the original papers' authors, affiliations, captions, references, and methods.
 

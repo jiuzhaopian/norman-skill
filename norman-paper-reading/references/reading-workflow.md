@@ -40,6 +40,8 @@ For deep/extend, inspect figures, tables, experiments, or propositions that dete
 
 Capture a complete original image for every individually explained figure/table and place it before that item's analysis. Batch known figure-bearing pages at default DPI and inspect them once. Use a readable full page as the original when sufficient; confirm a crop or increase DPI only to resolve a specific readability/completeness problem. Preserve captions and panel coverage. See [figure-and-equation-reading.md](figure-and-equation-reading.md). If image retrieval or inspection fails, disclose the limitation locally and in the reading scope.
 
+For each decisive or unfamiliar visual, reconstruct what one element represents and how a reported value is produced before summarizing the pattern. Work through a representative reading and a meaningful comparison, including the role of any central reference feature. Check training/evaluation or cohort/measurement flow, aggregation, and jointly changed factors where relevant. Use the methods and supplements to resolve missing links rather than inferring them from the caption. Explain unfamiliar equations through their operation and a sample or term before expanding the notation.
+
 Check controls, metrics, statistical units, independent validation, data leakage, assumptions, and proof conditions according to [paper-types.md](paper-types.md). Actually read necessary supplements; if unavailable, retain the gap.
 
 ## 4. Third pass: reconstruction and boundaries
@@ -59,6 +61,8 @@ For whole-paper deep analysis, add distinct future-insights and next-step-plan s
 Give page, section, figure/table, or source-block IDs for key conclusions. Disclose unread material, uncertain OCR, images not visually inspected, and missing parameters. Check key scientific evidence while reading/writing. At completion, reconcile scope and cross-check unresolved/high-risk claims; do not repeat already successful inspections without a specific reason. Run structural validation once after saved content/assets are ready, then rerun affected checks only after repairs. Use the selected mode's heading outline in [output-and-brand.md](output-and-brand.md).
 
 Apply the semantic completion check in [research-story-and-limitations.md](research-story-and-limitations.md). Confirm that the actual text explains the prior routes, specific gap, origin of the proposed idea, experiment sequence, and consequential limitations. A heading or a successful structural validation cannot substitute for that explanation. Check that terms and equations follow their needed conceptual explanation and that audit records do not dominate the main narrative.
+
+Also apply the reader-transfer check in [figure-and-equation-reading.md](figure-and-equation-reading.md). Read the explanation as instructions for decoding an element and repeating the comparison; repair missing operations. Confirm that main evidence, auxiliary observations, and proposed explanations keep their supported roles. This semantic review is distinct from structural validation and does not require quizzing the user.
 
 Long papers can be developed section by section in the same note with pending coverage marked; partial reading is not full close reading. Reuse C/E/D/A IDs and source locations in follow-ups. When a judgment changes, record the reason for the revision.
 

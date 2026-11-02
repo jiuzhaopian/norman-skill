@@ -35,6 +35,8 @@ In lengthy deep/extend work, give a short, source-grounded initial overview befo
 
 Explain each result thoroughly once and use C/E/D/A cross-references in subsequent cards instead of repeating whole explanations. Group similar panels while naming coverage. Avoid repeating definitions and generic caveats. Build saved Markdown/evidence and requested HTML from the same checked content; do not independently rewrite the scientific analysis for each format. Run the note validator after content/assets are ready, not after every paragraph or image.
 
+A decisive or unfamiliar figure/table explanation includes a concrete reading operation and a meaningful comparison, not just a glossary of axes and a trend. Explain the use of salient reference features, how the number is produced, and the item's actual role in the argument. Follow [figure-and-equation-reading.md](figure-and-equation-reading.md), including its reader-transfer completion check. These functions may share a concise paragraph for simple items; they are not a fixed set of headings or a minimum length requirement.
+
 Before delivery, apply the semantic completion check in [research-story-and-limitations.md](research-story-and-limitations.md). Prior-work mechanisms, the gap-to-design connection, experiment logic, and limitations must be explained in the text. Move operational audit detail out of the main narrative when it is not needed for a scientific judgment; structural validation cannot check readability or reasoning completeness.
 
 ## Original images next to explanations

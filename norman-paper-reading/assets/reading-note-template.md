@@ -40,31 +40,33 @@ Source: actual figure number, panel coverage, page/locator, and source-block ID.
 
 #### Why was this done?
 
-The question left by the preceding result.
+The scientific question, the source-supported answer, and this item's role in the argument: main evidence, diagnosis, exploratory observation, mechanism hypothesis, ablation, or another supported role. Explain its connection to the surrounding work without forcing a causal sequence.
 
 #### How was it done?
 
-Data, sample/repeat units, controls, procedure, and statistics.
+Data, sample/repeat units, controls, changed factors, procedure, and aggregation. Separate training, inference, and evaluation when relevant; define the concepts needed to understand this setup at first use.
 
 #### How should it be read?
 
-Panels, axes, units, colors, symbols, and references.
+Explain what one visual element represents, then panels, axes/units, colors, symbols, and scales. For a decisive or unfamiliar visual, walk through a representative cell, point, bar, region, or diagram path. Explain the meaning and use of a central diagonal, baseline, threshold, inset, or second axis, including any pattern created by selection or construction. Mark approximate readings and keep illustrative examples separate from paper measurements.
 
 #### What was observed?
 
-Relevant panel results, verified numbers, intervals, and labeled estimates.
+Show a meaningful comparison: identify the shared conditions and changed factors, read the relevant elements, and explain the result. Then summarize the relevant panels, verified numbers, intervals, and important exceptions. Labels plus an overall trend alone do not complete the explanation.
 
 #### What does it support, and where is the boundary?
 
-Claim/evidence IDs, supported conclusions, alternatives, and limits.
+Claim/evidence IDs, the inference from the observed comparison, author interpretation versus analyst assessment, and consequential alternatives or limits. State which effect the controls isolate; keep unspecified procedures unresolved.
 
 #### What question follows?
 
-What remains unresolved and why the next analysis is needed.
+What this evidence adds, what remains unresolved, and how the next analysis relates. Identify a parallel or auxiliary contribution when that is its role. Combine these explanatory functions for simple items rather than expanding empty headings.
 
 ### Table 1 — The comparison this table supports
 
-Insert the original table image, preserving headers, units, all parts, footnotes, and caption. Include the actual source locator, then explain comparison conditions, results, and limits. Remove this item if the paper has no relevant table. Repeat the image-first structure for every individually explained figure/table.
+Insert the original table image, preserving headers, units, all parts, footnotes, and caption. Include the source locator. Explain row/column meanings and metric directions, then trace how a representative number was produced and compare it under matched conditions. For model evaluations, clarify training data/objective, shared versus separate models, test data, score used, and metric aggregation as relevant. Check jointly changed factors and missing score-combination rules before attributing gains. Explain the supported comparison and important exceptions. Remove this item if the paper has no relevant table. Repeat the image-first structure for every individually explained figure/table.
+
+Before finalizing this section, apply references/figure-and-equation-reading.md's reader-transfer check: can the reader decode an element, reproduce the comparison, and explain its role? Repair the missing operation rather than adding labels alone.
 
 For theory, replace the figure/table section with key propositions, assumptions, proof steps, and counterexamples; keep source visuals where helpful.
 
@@ -72,7 +74,7 @@ For theory, replace the figure/table section with key propositions, assumptions,
 
 ### Equation identifier — Its role in the method
 
-Explain the problem and mechanism before the notation. Give the original equation/crop and locator, symbols, units/dimensions, operations, intuition, assumptions, and role. Separate source derivation from added derivation. Remove this section if no equation needs explanation and note the scope where relevant.
+Explain the problem and operation before the full notation. Give the original equation/crop and locator, then follow a sample or term through inputs, computation, and effect when useful for an unfamiliar expression. Define symbols, index sets, units/dimensions, assumptions, and method role. Distinguish parameters, hyperparameters, losses, probabilities, and metrics; label all added demonstration values. Separate source derivation from added derivation. Remove this section if no equation needs explanation and note the scope where relevant.
 
 ## 7. Evidence cards
 

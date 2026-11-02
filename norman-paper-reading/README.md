@@ -6,11 +6,18 @@
 
 Whole-paper reading now traces prior approaches, established progress, the specific gap, the proposed idea, its methods and experiments, and the supported scope.
 
+当前阅读规范修订：`2026-11-03-figure-reading`，基于 1.4.0 基础包，保留原版执行程序。
+Current reading revision: `2026-11-03-figure-reading`, based on package version 1.4.0 with unchanged upstream executables.
+
 - **研究背景、相关工作与研究动机**：解释代表方法如何工作，本文继承或修改了什么，并区分当前论文的介绍与实际读过的被引原文。
 - **研究局限与适用范围**：区分作者承认的限制、阅读者判断以及阅读/复现缺口，说明重要限制影响哪项结论。
 - **可读性与范围**：先讲机制再展开公式，按科学问题串起实验；quick/focused 保持原请求范围，未来规划保持适度。
+- **具体读图与比较**：解释一个有代表性的格子、点、柱形或流程连接，说明参照特征的含义和用途；追溯结果数值的产生过程，核对比较中共同改变的因素，并区分主证据与辅助发现。
+- **公式与理解检查**：陌生表达式先解释具体运算，再对应符号；交付前检查读者能否独立读出元素、完成比较，并说明结论依据。简单内容保持简洁，不设固定字数。
 
-Read the updated [SKILL.md](SKILL.md), [workflow](references/reading-workflow.md), [research-story and limitations guide](references/research-story-and-limitations.md), and [report template](assets/reading-note-template.md) directly. These local files override the older embedded `guide`/`read` resources; executables are unchanged. Output attribution is opt-in, while original authors and scientific citations remain credited.
+Read the updated [SKILL.md](SKILL.md), [workflow](references/reading-workflow.md), [figure and equation guide](references/figure-and-equation-reading.md), [research-story and limitations guide](references/research-story-and-limitations.md), and [report template](assets/reading-note-template.md) directly. These local files override the older embedded `guide`/`read` resources; executables are unchanged. Output attribution is opt-in, while original authors and scientific citations remain credited.
+
+Decisive or unfamiliar visuals include a concrete reading example, an explanation of salient reference features, and a meaningful comparison. Result tables trace how a value is produced and which factors change; unfamiliar equations explain an operation before expanding notation. The completion review checks whether the reader can repeat the comparison and explain its role. This is a semantic review, not a compulsory user quiz or a fixed-length template.
 
 报告默认不附加技能作者推广署名，明确要求时才添加。原论文作者与科学引用正常保留。更多说明见 [FORK-NOTES.md](FORK-NOTES.md)。
 
@@ -42,8 +49,8 @@ For example, ask “Use `$norman-paper-reading` for a close reading of this pape
 完整精读会把关键设计选择、原始图表和必要公式放入同一条研究脉络中解释。
 A close reading explains key design choices, original figures, and necessary equations within one research storyline.
 
-解释单张图时，结果会说明图的用途、阅读顺序、各面板的观察结果及其支持的结论。
-For a single figure, the response explains its purpose, reading order, panel observations, and supported conclusions.
+解释单张关键或陌生图时，结果会说明实验设置，带读一个具体元素，解释对角线、基准线等参照的用途，完成关键比较，再说明结果及其在论文中的作用。
+For a decisive or unfamiliar figure, the response explains the setup, walks through a representative element, explains the use of reference features, completes the key comparison, and connects the finding to the paper's argument.
 
 如需保存，可以指定 Markdown 报告和图片目录；如需网页阅读版，可以明确要求 HTML。
 If you want saved files, specify a Markdown report and image folder; explicitly request HTML if you want a web reading version.

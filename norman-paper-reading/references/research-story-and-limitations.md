@@ -34,6 +34,8 @@ Keep three kinds of explanation distinct: the authors' stated motivation, an ana
 
 For the research storyline, connect each important experiment to a question left by the preceding evidence: whether the method works, where the gain comes from, which alternative explanation is tested, or where transfer fails. Explain a change in research level, such as moving from a mechanism to the downstream value of generated data. State what that later evaluation can establish.
 
+Represent the actual argument, including branches. Distinguish central tests from auxiliary behavioral observations, exploratory mechanisms, and implementation ablations. An interesting intermediate result need not derive the proposed solution; explain its contribution without turning its position in the paper into causal evidence. If a composite figure combines definitions, failure observations, and a proposed method, introduce the definitions when needed and interpret the remaining parts alongside their evidence. A readable teaching order can differ from figure-number order, with explicit cross-references. Where several design factors change together, describe the combined result and locate the control needed for component attribution.
+
 ## 3. Write for understanding
 
 Lead with a brief, understandable account of the paper's question, main idea, decisive finding, and consequential boundary. The reader should understand the core argument before encountering extensive evidence records.

@@ -2,13 +2,15 @@
 
 ## 本 Fork 的改进 / Fork improvements
 
-本仓库由 jiuzhaopian 基于 [N-tongxue/norman-skill](https://github.com/N-tongxue/norman-skill) 创建，原作者为 N同学。本 Fork 主要增强 [norman-paper-reading](norman-paper-reading/README.md) 的研究脉络、相关工作与研究局限解读。
+本仓库由 jiuzhaopian 基于 [N-tongxue/norman-skill](https://github.com/N-tongxue/norman-skill) 创建，原作者为 N同学。本 Fork 主要增强 [norman-paper-reading](norman-paper-reading/README.md) 的研究脉络、相关工作、图表与公式讲解，以及研究局限解读。当前阅读规范修订为 `2026-11-03-figure-reading`。
 
-This fork by jiuzhaopian builds on Norman-Skill by N同学 and improves the research storyline, related-work analysis and limitations discussion in norman-paper-reading.
+This fork by jiuzhaopian builds on Norman-Skill by N同学 and improves the research storyline, related-work analysis, figure/table/equation explanations and limitations discussion in norman-paper-reading. Current reading revision: `2026-11-03-figure-reading`.
 
 - 方法之前说明前人路线、代表工作、已有进展和具体缺口，再解释本文为何选择相应思路。
 - 结果之后单列作者承认的局限、阅读者的证据判断与适用范围；阅读和复现缺口另行记录。
 - 先解释机制，再引入术语和公式，并说明主要实验分别回答什么问题。
+- 关键图表带读一个代表元素，解释对角线、基准线等参照的用途，再完成一次有效比较；结果表追溯数值产生过程，陌生公式先走一遍具体运算。
+- 交付前检查读者能否独立读图、重复关键比较并说清证据在论文中的作用；简单图表保持简洁。
 - 报告默认不附加技能作者推广水印；保留原作者和科学引用，仅在明确请求时增加输出署名。
 
 更新规则以仓库内可读文本为准。原版执行程序与其他技能保持上游版本。详见 [修改说明](norman-paper-reading/FORK-NOTES.md)。

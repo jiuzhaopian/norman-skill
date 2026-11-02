@@ -2,4 +2,4 @@ interface:
   display_name: "Norman Paper Reading"
   short_description: "Trace research ideas, methods, evidence, and limitations"
   brand_color: "#28664F"
-  default_prompt: "Use $norman-paper-reading to trace this paper's related-work lineage and motivation, explain its methods and experiments with original figures, and distinguish author-stated limitations from evidence-based assessment."
+  default_prompt: "Use $norman-paper-reading to trace this paper's related-work lineage, explain methods and original figures through concrete reading examples and controlled comparisons, and connect the evidence to conclusions and limitations."
